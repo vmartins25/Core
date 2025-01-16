@@ -1,0 +1,33 @@
+/* Global Header */
+.header {
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    color: var(--default-color);
+    background-color: var(--header-background);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  .header .logo {
+    line-height: 1;
+  }
+  
+  .header .logo img {
+    max-height: 32px;
+    margin-right: 8px;
+  }
+  
+  .header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--heading-color);
+  }
+  
+  /* Global Header on Scroll */
+    .scrolled .header {
+    --background-color: #059ea3;
+  }
+  

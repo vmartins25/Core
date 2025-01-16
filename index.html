@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Assine Azza Internet</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/cardProdutos.css" rel="stylesheet">
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/about.css" rel="stylesheet">
+  <link href="assets/css/banner.css" rel="stylesheet">
+  <link href="assets/css/contact.css" rel="stylesheet">
+  <link href="assets/css/faq.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <link href="assets/css/navegation.css" rel="stylesheet">
+
+  <style>
+.alertaCliente{
+  display: flex;
+    justify-content: center;
+    background: #ffc107;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.alertaCliente p{
+margin: 0;;
+}
+
+.logoAzza{
+  width: 150px;  
+  top: -30px; 
+}
+
+.navegation{
+  margin: 0;
+}
+
+.whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366; /* Cor do WhatsApp */
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 24px;
+      z-index: 9999; 
+    }
+    .whatsapp-button:hover {
+      background-color: #128C7E;
+    }
+    
+
+
+
+  </style>
+</head>
+
+<body class="index-page">
+  <div class="alertaCliente">
+    <p>Site exclusivo para vendas e novos clientes! Se você já é cliente ligue (11) 2391-1929123</p>
+  </div>
+
+  <!-- #region WhatsApp -->
+  <div>
+    <a href="https://wa.me/5515981510908?text=Olá%2C%20preciso%20de%20ajuda" class="whatsapp-button" target="_blank">
+      <i class="fab fa-whatsapp"></i> 
+    </a>
+  </div>
+<!-- #endregion WhatsApp -->
+  <header class="header">
+ 
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between navegation">
+
+      <!-- <a href="index.html" >      
+        <img class="logoAzza " src="assets/img/logo-azza-voa-bg.webp" alt="logo">
+      </a> -->
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="portfolio-details.html">Politica de Privacidade</a></li>             
+          <li><a href="#services">Services</a></li>        
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="produtos-container" class="row g-4">
+        <!-- Os produtos serão adicionados aqui dinamicamente -->
+    </div>
+</div>
+
+  <main class="main">
+
+    <!--#region Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <img class="d-block w-100" src="assets/img/imagem.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section>
+    <!--#endregion Hero Section -->
+
+    <!--#region Products Cards-->
+    <section id="pricing" class="pricing section">      
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>400 mega</h3>              
+              <h4><sup>R$</sup>89,99<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Instalação Grátis</span></li>
+                <li><i class="bi bi-check"></i> <span>O melhor Wi-Fi do mercado</span></li>
+                <li><i class="bi bi-check"></i> <span>Internet 100% Fibra Ótica</span></li>               
+              </ul>
+              <div class="text-center"><a class="buy-btn link-whatsapp">Contratar agora</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>800 mega</h3>
+              <h4><sup>R$</sup>99,90<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Instalação Grátis</span></li>
+                <li><i class="bi bi-check"></i> <span>O melhor Wi-Fi do mercado</span></li>
+                <li><i class="bi bi-check"></i> <span>Internet 100% Fibra Ótica</span></li>  
+              </ul>
+              <div class="text-center"><a class="buy-btn link-whatsapp">Contratar agora</a></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>1 giga</h3>
+          
+              <h4><sup>R$</sup>139,90<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Instalação Grátis</span></li>
+                <li><i class="bi bi-check"></i> <span>O melhor Wi-Fi do mercado</span></li>
+                <li><i class="bi bi-check"></i> <span>Internet 100% Fibra Ótica</span></li>  
+              </ul>
+              <div class="text-center"><a class="buy-btn link-whatsapp">Contratar agora</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- #endregion Products Cards -->
+
+    <!--#region About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/casal.jpg"></div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">A AZZA CHEGOU COM MUITA INOVAÇÃO</h2>
+            <div class="our-story">
+             
+             
+              <p>Fundada em 2011, a Azza, operadora regional brasileira, consolidada no setor de Telecomunicações, 
+                dedica-se ao provimento dos serviços de acesso à internet para os mercados Residenciais e 
+                Corporativo em mais de 40 cidades do interior de São Paulo. Com mais de 700 colaboradores, 
+                a empresa tem como objetivo ser a maior provedora de internet do segmento. Conectamos o interior 
+                de São Paulo de ponta a ponta, transformando a vida de mais de 145 mil usuários com qualidade, 
+                tecnologia e segurança por meio de internet 100% fibra de ultravelocidade. Nossos equipamentos 
+                possibilitam Conexão e Velocidade sem interferência de sinal, o que nos permite a oferta de 
+                planos de 100MB à 2GB com o melhor Wi-Fi do mercado e instalação grátis. Contamos com uma equipe 
+                executiva com ampla experiência em gerenciamento e um time técnico capaz de corresponder aos
+                 mais elevados níveis de exigência.</p>
+             
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--#endregion About Section -->
+
+    <!--#region App -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-md-1"></div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/app/Azza.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/app/Aya.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/app/Clube-de-Vantagens.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/app/Curso-de-Bolso.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/app/E-Saude.webp" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-md-1"></div>
+        </div>
+
+      </div>
+
+    </section>
+    <!--#endregion-->
+
+    <!--#region Benefícios-->
+    <section id="features-2" class="features section features-2">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Benefícios</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between">
+          
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+
+            <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-archive flex-shrink-0"></i>
+              <div>
+                <h4>Livros Digitais:</h4>
+                <p>Tenha acesso aos melhores ebooks selecionados para você!</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-basket flex-shrink-0"></i>
+              <div>
+                <h4>Harum esse qui</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <div>
+                <h4>Aut occaecati</h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 " data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <div>
+                <h4>Beatae veritatis</h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div>
+            </div><!-- End Features Item-->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- #endregion /Features 2 Section -->
+
+    <!-- #region Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Benefícios</h2>        
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+                <h3>Aya Books</h3>
+              <p>Tenha acesso aos melhores ebooks selecionados para você!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- #endregion /Services Section -->    
+
+    <!--#region Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tudo o Que Você Precisa Saber</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Como eu entro em contato com a ouvidoria?</h3>
+                <div class="faq-content">
+                  <p>Para casos urgentes, os clientes da Azza Telecom têm acesso ao telefone e e-mail da Ouvidoria para realizar suas solicitações. Os contatos são:
+
+                    ouvidoria@azza.net.br
+                    
+                    0800 773 32 32</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Como alterar a senha do meu roteador Wi-Fi?</h3>
+                <div class="faq-content">
+                  <p>Logo abaixo de seu aparelho roteador instalado pela Azza, é possível observar uma etiqueta com o login e senha para acesso de seu roteador. Utilize a web para acessar o portal e efetue a troca. Caso tenha dúvidas, entre em contato com Atendimento ao Cliente com o número 0800 591 3181.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Como atualizo os meus dados cadastrais?</h3>
+                <div class="faq-content">
+                  <p>Caso tenha algum dado incorreto em seu cadastro, solicitamos que entre em contato com o Atendimento ao Cliente ou comercial por meio do número 0800 591 3181. Nas lojas físicas da Azza também é possível realizar este processo.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Qual é o horário de funcionamento da Azza?</h3>
+                <div class="faq-content">
+                  <p>Nosso atendimento está SEMPRE pronto, aguardando por você, 24 horas por dia, 7 dias por semana.
+                    Nossas lojas físicas permanecem abertas de segunda à sexta, das 08h às 18h, e sábado das 08h às 12h.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Quais as vantagens dos planos da Azza?</h3>
+                <div class="faq-content">
+                  <p>São inúmeras, mas vamos facilitar para você e listar algumas aqui:
+
+                    – Você pode jogar, assistir filmes, baixar tudo o que quiser e usar diferentes dispositivos ao mesmo tempo sem travar;</br>
+                    – Instalação grátis;</br>
+                    – Planos de 200 Mega a 1 Giga;</br>
+                    – Melhor Wi-Fi do mercado;</br>
+                    – Modem com tecnologia Mesh da Nokia;</br>
+                    – Maior cobertura da região, atuando em diferentes cidades do interior paulista;</br>
+                    – Melhor qualidade de atendimento, 24h por dia, 7 dias por semana;</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Como faço para saber se atendem no meu endereço?</h3>
+                <div class="faq-content">
+                  <p>Para isso, basta entrar em contato conosco pelo Whatsapp que informaremos na hora!</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              
+
+              <div class="faq-item">
+                <h3>Como eu contrato um plano?</h3>
+                <div class="faq-content">
+                  <p>Após escolher um de nossos planos, entre em contato por meio de um de nossos canais de atendimento e garanta já o seu:
+                  </br>
+                    WhatsApp: (18) 98800-3076</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--#endregion /Faq Section -->
+
+    <!-- #region Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>A AZZA CHEGOU COM MUITA INOVAÇÃO</h3>
+              <p>Fundada em 2011, a Azza, operadora regional brasileira, consolidada no setor de Telecomunicações, 
+                dedica-se ao provimento dos serviços de acesso à internet para os mercados Residenciais e 
+                Corporativo em mais de 40 cidades do interior de São Paulo. Com mais de 700 colaboradores, 
+                a empresa tem como objetivo ser a maior provedora de internet do segmento. Conectamos o interior 
+                de São Paulo de ponta a ponta, transformando a vida de mais de 145 mil usuários com qualidade, 
+                tecnologia e segurança por meio de internet 100% fibra de ultravelocidade. Nossos equipamentos 
+                possibilitam Conexão e Velocidade sem interferência de sinal, o que nos permite a oferta de 
+                planos de 100MB à 2GB com o melhor Wi-Fi do mercado e instalação grátis. Contamos com uma equipe 
+                executiva com ampla experiência em gerenciamento e um time técnico capaz de corresponder aos
+                 mais elevados níveis de exigência. </p>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--#endregion /Call To Action Section -->
+
+    <!--#region Contato -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Quer contratar um plano? Deixe seus dados que nós ligamos para você!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+
+          <div class="col-lg-12">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Me ligue</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!--#endregion Contato-->
+  </main>
+
+  <!--#region Footer-->
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+        <a href="index.html" >      
+          <img class="logoAzza " src="assets/img/logo.png" alt="logo">
+        </a>        
+      <!--<div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>-->
+      <div class="container">
+        <div class="credits">   
+          Site desenvolvido e publicado por Vibe Marketing e Tecnologia LTDA CNPJ: 53.632.517/0001-60.
+          </br>
+          Parceiro autorizado Azza. Uso da marca regulamentado. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--#endregion-->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- #region Preloader -->
+  <div id="preloader"></div>
+
+  <!--#region Scripts-->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+  var meuLink = "https://wa.me/5515981510908?text=Olá%2C%20preciso%20de%20ajuda";
+  
+  var links = document.querySelectorAll('.link-whatsapp');
+
+  links.forEach(function(link) {
+    link.href = meuLink;      
+    link.target = "_blank";   
+  });
+</script>
+
+<script>
+  // Função para buscar os produtos da API
+  async function carregarProdutos() {
+      try {
+          // Faz a requisição à rota do backend
+          const resposta = await fetch('http://localhost:3000/produtos');
+          const produtos = await resposta.json(); // Converte a resposta para JSON
+
+          // Seleciona o container onde os produtos serão exibidos
+          const container = document.getElementById('produtos-container');
+          container.innerHTML = ''; // Limpa o conteúdo existente
+
+          // Itera sobre os produtos recebidos e cria o HTML para cada um
+          produtos.forEach(produto => {
+              const card = document.createElement('div');
+              card.className = 'col-lg-4';
+
+              card.innerHTML = `
+                  <div class="pricing-item">
+                      <h3>${produto.NomeProdutoServico}</h3>
+                      <h4><sup>R$</sup>${produto.valor}<span> / mês</span></h4>
+                      <ul>
+                          ${produto.beneficios.split(',').map(beneficio => `<li><i class="bi bi-check"></i> <span>${beneficio}</span></li>`).join('')}
+                      </ul>
+                      <div class="text-center">
+                          <a href="#" class="buy-btn link-whatsapp">Contratar agora</a>
+                      </div>
+                  </div>
+              `;
+
+              // Adiciona o card ao container
+              container.appendChild(card);
+          });
+      } catch (error) {
+          console.error('Erro ao carregar os produtos:', error);
+      }
+  }
+
+  // Chama a função para carregar os produtos ao carregar a página
+  carregarProdutos();
+</script>
+
+
+<!--#endregion Scripts-->
+</body>
+
+</html>
